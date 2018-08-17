@@ -1,0 +1,15 @@
+[ 2018-08-17T11:18:02+08:00 ] 127.0.0.1 /index.php/Admin/goods/Images/icon_search.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+
+[ 2018-08-17T11:19:33+08:00 ] 127.0.0.1 /index.php/Admin/goods/Images/icon_search.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2018-08-17T11:20:11+08:00 ] 127.0.0.1 /index.php/Admin/goods/Images/icon_search.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+

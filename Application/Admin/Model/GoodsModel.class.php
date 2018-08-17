@@ -75,6 +75,37 @@ class GoodsModel extends Model {
         // 我们自己来过滤这个字段
         $data['goods_desc'] = removeXSS($_POST['goods_desc']);
     }
+
+    /**
+     * 实现翻页，收索，排序
+     */
+    public function search($perPage = 5) {
+        /*************** 收索 ***************/
+
+        /*************** 翻页 ***************/
+        // 取出总的记录数
+        $count = $this->count();
+        // 生成翻页类对象
+        $pageObj = new \Think\Page($count, $perPage);
+
+        $pageObj->setConfig('next', '下一页');
+        $pageObj->setConfig('prev', '上一页');
+        // 生成页面下显示的上一页，下一也的字符串
+        $pageString = $pageObj->show();
+
+        // 取某一页的数据
+        $data = $this->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+
+//        dump($pageObj->firstRow);
+//        dump($pageObj->listRows);
+//        die();
+
+        // 返回数据
+        return array(
+            'data'=>$data, // 数据
+            'page'=>$pageString, // 翻页字符串
+        );
+    }
 }
 
 

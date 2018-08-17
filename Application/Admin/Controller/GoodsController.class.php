@@ -44,6 +44,13 @@ class GoodsController extends Controller {
 
     // 商品列表页
     public function lst(){
-        echo '商品列表页！';
+
+        $model = D('goods');
+
+        // 返回数据和翻页
+        $data = $model->search();
+        $this->assign($data);
+
+        $this->display();
     }
 }
