@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>ipa包URL（必填）</string>
+                    <string>https://jshbpro.oss-cn-hangzhou.aliyuncs.com/zshs/ios/ZSHS-v1.0.4.ipa</string>
                 </dict>
                 <dict>
                     <key>kind</key>
